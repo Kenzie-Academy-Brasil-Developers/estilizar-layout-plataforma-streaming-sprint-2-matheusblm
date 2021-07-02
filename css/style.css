@@ -64,7 +64,9 @@ h2{
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
-	margin: 3vh;
+	max-height: 868px;
+	margin: 10vw;
+
 }
 ul{
 	display: flex;
@@ -73,7 +75,7 @@ ul{
 	justify-content: center;
 	width: 100%;
 	max-width: 858px;
-	height: 60vh;
+	max-height: 40vh;
 	align-content: center;
 }
 
