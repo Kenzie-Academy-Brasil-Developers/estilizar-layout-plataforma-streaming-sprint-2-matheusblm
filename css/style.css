@@ -1,38 +1,141 @@
-/*
-Theme Name: KenzieFlix
-Author: Kenzie Academy
-Author URI: kenzie.com.br;
-Version: 1.0
- 
---------------------------------------------
-SUGESTÃO DE ESTRUTURAÇÃO BASE 
---------------------------------------------
-**** DECLARAÇÃO DE VARIÁVEIS
-**** BODY
-**** TOPO
-**** RODAPÉ
-**** PÁGINA INICIAL
-*/
-
-/* VARIÁVEIS */
-:root{
-  
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
-/*BODY*/
-	body{
+:root{
+  --color_font: white;
+}
 
+
+body{
+	background-color: #00002e;
+	color: var(--color_font);
+	font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
 	}
+header.topo{
+	display: flex;
+    	justify-content: center;
+	
+}
+h2{
+	font-size: 50px;
+	margin: 2vw;
+}
+.pg-home{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	max-height: 868px;
+	margin: 10vw;
 
-/*TOPO*/
+}
+ul{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 100%;
+	max-width: 858px;
+	max-height: 40vh;
+	align-content: center;
+}
+
+li img{
+	width: 150px;
+}
+
+li{
+	width: 186px;
+	margin: 1vw 0vw;
+}
+h3{
+	padding-top: 20%;
+}
+li img:hover{
+	border: 2px solid white;
+
+}
+li:hover{
+	font-weight: bold;
+}
+.addPerfil img:hover{
+	border: 0vw;
+}
+.addPerfil img{
+	width: 100px;
+}
+.addPerfil h3{
+	padding-top: 49%;
+}
+figcaption{
+	display: none;
+}
+button{
+	background-color: #00002e;
+	color: var(--color_font);
+	border: 2px solid white;
+	border-radius: 1px;
+	font-size: 20px;
+	padding: 10px 20px;
+	margin-top: 5%;
+}
+@media (min-width: 1020px){
+	
 	header.topo{
+		display: flex;
+		    justify-content: flex-start;
 		
 	}
 
-/*RODAPÉ*/
+	ul{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		width: 858px;
+		max-height: 20vh;
+		align-content: center;
+	}
 	
 
-/*PÁGINA INICIAL*/
-	div.pg-home{
-		
-	}
+}
